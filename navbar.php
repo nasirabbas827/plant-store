@@ -14,6 +14,12 @@
                 echo '<li class="nav-item"><a class="nav-link" href="view_messages.php">View Messages</a></li>';
                 echo '<li class="nav-item"><a class="nav-link" href="logout.php">Logout</a></li>';
             } else {
+                echo '<li class="nav-item"><a class="nav-link" href="summer_plants.php">Summer Plants</a></li>';
+                echo '<li class="nav-item"><a class="nav-link" href="winter_plants.php">Winter Plants</a></li>';
+                echo '<li class="nav-item"><a class="nav-link" href="gardening_tools.php">Gardening Tools</a></li>';
+                echo '<li class="nav-item"><a class="nav-link" href="pots.php">Pots</a></li>';
+                echo '<li class="nav-item"><a class="nav-link" href="fertilizers.php">Fertilizers</a></li>';
+                echo '<li class="nav-item"><a class="nav-link" href="seeds.php">Seeds</a></li>';
                 echo '<li class="nav-item"><a class="nav-link" href="register.php">Register</a></li>';
                 echo '<li class="nav-item"><a class="nav-link" href="login.php">Login</a></li>';
                 echo '<li class="nav-item"><a class="nav-link" href="./admin/admin_login.php">Admin Login</a></li>';

@@ -92,7 +92,7 @@ if (mysqli_num_rows($plantsResult) > 0) {
 
     while ($row = mysqli_fetch_assoc($plantsResult)) {
         echo '<div class="col-md-4">';
-        echo '<div class="card">';
+        echo '<div class="card mt-3">';
         echo '<img class="card-img-top" src="./admin/' . $row['ImageURL'] . '" alt="' . $row['Name'] . '">';
         echo '<div class="card-body">';
         echo '<h5 class="card-title">' . $row['Name'] . '</h5>';

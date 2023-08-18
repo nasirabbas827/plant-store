@@ -17,10 +17,25 @@ $categoriesResult = mysqli_query($conn, $categoriesQuery);
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/style.css">
     <style>
-        .jumbotron{
-            background-color: aquamarine;
+        .jumbotron {
+            height: 500px;
+            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./imgs/main-image.jpg');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+        }
+    
+        .jumbotron h1 {
+            font-size: 3rem;
+        }
+    
+        .jumbotron p {
+            font-size: 1.5rem;
         }
     </style>
+    
+
 </head>
 <body>
 
@@ -32,7 +47,7 @@ include('navbar.php');
     <div class="container text-center">
         <h1 class="display-4">Explore Our Green Oasis</h1>
         <p class="lead">Discover a diverse collection of exquisite plants to bring nature into your space.</p>
-        <a href="shop.php" class="btn btn-success btn-lg">Browse Plants</a>
+        <a href="login.php" class="btn btn-success btn-lg">Browse Plants</a>
     </div>
 </div>
 
@@ -88,7 +103,7 @@ if (mysqli_num_rows($plantsResult) > 0) {
 
     while ($row = mysqli_fetch_assoc($plantsResult)) {
         echo '<div class="col-md-4">';
-        echo '<div class="card">';
+        echo '<div class="card mt-3">';
         echo '<img class="card-img-top" src="./admin/' . $row['ImageURL'] . '" alt="' . $row['Name'] . '">';
         echo '<div class="card-body">';
         echo '<h5 class="card-title">' . $row['Name'] . '</h5>';
