@@ -40,7 +40,7 @@ if (isset($_POST['update_profile'])) {
     $new_password = $_POST['new_password'];
     if (!empty($new_password)) {
         $hashed_password = password_hash($new_password, PASSWORD_DEFAULT);
-        $updatePasswordQuery = "UPDATE users SET password = '$hashed_password' WHERE id = $user_id";
+        $updatePasswordQuery = "UPDATE users SET password = "YOUR_OWN_API_KEY" WHERE id = $user_id";
         if (mysqli_query($conn, $updatePasswordQuery)) {
             echo "Password updated successfully.";
         } else {
